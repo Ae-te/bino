@@ -3,17 +3,23 @@ const gulp = require('gulp'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     minifyJS = require('gulp-minify'),
+<<<<<<< HEAD
     autoprefixer = require('gulp-autoprefixer'),
+=======
+>>>>>>> 7e509453522a314dd20ac3c9591cdf652db17f25
     browserSync = require('browser-sync').create();
 //create - чтобы создать соединение с локальным сервером
 
 gulp.task('minCSS', async function() {//таск позволяет минифицировать scss-файлы
     gulp.src('app/css/*.scss')//взяли файлы из папки app
         .pipe(sass())//конвертируем из scss в css
+<<<<<<< HEAD
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 20 versions'], //Добавляет префиксы для последних 20 версий всех браузеров
             cascade: false
         }))
+=======
+>>>>>>> 7e509453522a314dd20ac3c9591cdf652db17f25
         .pipe(minifyCSS())//функция минификации
         .pipe(rename({//переименовываем файл
             suffix: '.min'
@@ -45,4 +51,8 @@ gulp.task('browserSync', function() {
     // Перезагружаем наш локальный сервер.
 });
 
+<<<<<<< HEAD
 gulp.task('default', gulp.parallel('browserSync', 'watchAll'));
+=======
+gulp.task('default', gulp.parallel('browserSync', 'watchAll'));
+>>>>>>> 7e509453522a314dd20ac3c9591cdf652db17f25
