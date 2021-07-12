@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Разработка сайта</title>
+  <title>Bino</title>
   <link rel="shorcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/main.min.css">
@@ -12,232 +12,339 @@
   <script src="https://kit.fontawesome.com/f008b37bdd.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<section class="home">
-  <header>
-    <div class="container">
-      <div class="header-top">
-        <a class="logo" href="#">
-          <img src="/img/logo.png">
+<header class="header">
+  <div class="container">
+    <div class="header__top">
+      <div class="logo">
+        <a class="logo__link" href="#">
+          <img class="logo__img" src="/img/logo.png">
         </a>
-        <div class="menu"><i class="fas fa-bars"></i></div>
-        <ul>
-          <li><a class="active" href="" onclick="return slowScroll('.header-main')">Home</a></li>
-          <li><a href="" onclick="return slowScroll('.features')">About us</a></li>
-          <li><a href="" onclick="return slowScroll('.information')">Portfolio</a></li>
-          <li><a href="" onclick="return slowScroll('.subscribe')">Pricing</a></li>
-          <li><a href="" onclick="return slowScroll('.subscribe')">Team</a></li>
-          <li><a href="" onclick="return slowScroll('.subscribe')">Blog</a></li>
-          <li><a href="" onclick="return slowScroll('.subscribe')">Contact</a></li>
+      </div>
+      <div class="menu">
+        <div class="menu__img">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__link menu__link--active" href="#" onclick="return slowScroll('.slider')">Home</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__link" href="#" onclick="return slowScroll('.feature')">About us</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__link" href="#" onclick="return slowScroll('.services')">Portfolio</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__link" href="#" onclick="return slowScroll('.contacts')">Pricing</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__link" href="#" onclick="return slowScroll('.slider')">Team</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__link" href="#" onclick="return slowScroll('.slider')">Blog</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__link" href="#" onclick="return slowScroll('.contacts')">Contact</a>
+          </li>
         </ul>
       </div>
-      <div class="mobile-menu">
-        <ul>
-          <li><a href="" onclick="return slowScroll('.header-main')">Home</a></li>
-          <li><a href="" onclick="return slowScroll('.features')">About us</a></li>
-          <li><a href="" onclick="return slowScroll('.information')">Portfolio</a></li>
-          <li><a href="" onclick="return slowScroll('.subscribe')">Pricing</a></li>
-          <li><a href="" onclick="return slowScroll('.subscribe')">Team</a></li>
-          <li><a href="" onclick="return slowScroll('.subscribe')">Blog</a></li>
-          <li><a href="" onclick="return slowScroll('.subscribe')">Contact</a></li>
-        </ul>
-      </div>
     </div>
-  </header>
-
-  <div class="slider">
-    <div class="slider-item">
-      <div class="slider-title">
-        <h3>Our Clients Are Our First Priority</h3>
-        <h1>Welcome to Bino1</h1>
-      </div>
-      <div class="separator"></div>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took a galley
-        of type and scrambled it to make a type specimen book.</p>
-      <div class="slider-btn">
-        <button type="button" class="btn btn-red">GET STARTED NOW</button>
-        <button type="button" class="btn btn-white">LEARN MORE</button>
-      </div>
-    </div>
-    <div class="slider-item">
-      <div class="slider-title">
-        <h3>Our Clients Are Our First Priority</h3>
-        <h1>Welcome to Bino2</h1>
-      </div>
-      <div class="separator"></div>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took a galley
-        of type and scrambled it to make a type specimen book.</p>
-      <div class="slider-btn">
-        <button type="button" class="btn btn-red">GET STARTED NOW</button>
-        <button type="button" class="btn btn-white">LEARN MORE</button>
-      </div>
-    </div>
-    <div class="slider-item">
-      <div class="slider-title">
-        <h3>Our Clients Are Our First Priority</h3>
-        <h1>Welcome to Bino3</h1>
-      </div>
-      <div class="separator"></div>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took a galley
-        of type and scrambled it to make a type specimen book.</p>
-      <div class="slider-btn">
-        <button type="button" class="btn btn-red">GET STARTED NOW</button>
-        <button type="button" class="btn btn-white">LEARN MORE</button>
-      </div>
-    </div>
+    <nav class="mobile-menu header__mobile-menu">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__list-item">
+          <a class="mobile-menu__link" href="#" onclick="return slowScroll('.slider')">Home</a>
+        </li>
+        <li class="mobile-menu__list-item">
+          <a class="mobile-menu__link" href="#" onclick="return slowScroll('.feature')">About us</a>
+        </li>
+        <li class="mobile-menu__list-item">
+          <a class="mobile-menu__link" href="#" onclick="return slowScroll('.services')">Portfolio</a>
+        </li>
+        <li class="mobile-menu__list-item">
+          <a class="mobile-menu__link" href="#" onclick="return slowScroll('.contacts')">Pricing</a>
+        </li>
+        <li class="mobile-menu__list-item">
+          <a class="mobile-menu__link" href="#" onclick="return slowScroll('.slider')">Team</a>
+        </li>
+        <li class="mobile-menu__list-item">
+          <a class="mobile-menu__link" href="#" onclick="return slowScroll('.slider')">Blog</a>
+        </li>
+        <li class="mobile-menu__list-item">
+          <a class="mobile-menu__link" href="#" onclick="return slowScroll('.contacts')">Contact</a>
+        </li>
+      </ul>
+    </nav>
   </div>
+
+  <section class="slider header__slider">
+    <div class="slider__item">
+      <div class="slider__title">
+        <h3 class="slider__h3">Our Clients Are Our First Priority</h3>
+        <h1 class="slider__h1">Welcome to Bino</h1>
+      </div>
+      <div class="separator slider__separator"></div>
+      <p class="slider__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+        been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book.</p>
+      <div class="slider__buttons">
+        <button class="btn slider__btn" type="button">GET STARTED NOW</button>
+        <button class="btn slider__btn slider__download" type="button">LEARN MORE</button>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__title">
+        <h3 class="slider__h3">Our Clients Are Our First Priority</h3>
+        <h1 class="slider__h1">Welcome to Bino2</h1>
+      </div>
+      <div class="separator slider__separator"></div>
+      <p class="slider__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+        been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book.</p>
+      <div class="slider__buttons">
+        <button class="btn slider__btn" type="button">GET STARTED NOW</button>
+        <button class="btn slider__btn slider__download" type="button">LEARN MORE</button>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__title">
+        <h3 class="slider__h3">Our Clients Are Our First Priority</h3>
+        <h1 class="slider__h1">Welcome to Bino3</h1>
+      </div>
+      <div class="separator slider__separator"></div>
+      <p class="slider__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+        been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book.</p>
+      <div class="slider__buttons">
+        <button class="btn slider__btn" type="button">GET STARTED NOW</button>
+        <button class="btn slider__btn slider__download" type="button">LEARN MORE</button>
+      </div>
+    </div>
+  </section>
 
   <!--    arrows-->
-  <div class="prev wrapper">
-    <div class="arrow-part arrow-part_up"></div>
-    <div class="arrow-part arrow-part_down"></div>
-  </div>
-  <div class="next wrapper arrow-mirror">
-    <div class="arrow-part arrow-part_up"></div>
-    <div class="arrow-part arrow-part_down"></div>
+  <div class="arrow">
+    <div class="arrow__prev arrow__wrapper">
+      <div class="arrow__part arrow__part_up"></div>
+      <div class="arrow__part arrow__part_down"></div>
+    </div>
+    <div class="arrow__next arrow__wrapper arrow__mirror">
+      <div class="arrow__part arrow__part_up"></div>
+      <div class="arrow__part arrow__part_down"></div>
+    </div>
   </div>
 
   <section class="feature">
     <div class="polygon">
       <div class="container">
         <div class="row">
-          <div class="main_feature text-center">
+          <div class="feature__block text-center">
             <div class="col-md-3">
-              <div class="quarter-block">
-                <div class="feature-icon">
+              <div class="feature__quarter">
+                <div class="feature__icon">
                   <i class="fas fa-glasses"></i>
                 </div>
-                <h4>SLEEK DESIGN</h4>
-                <div class="feature-separator"></div>
-                <p align="justify">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has
-                  been the
-                  industry.</p>
+                <h4 class="feature__h4">SLEEK DESIGN</h4>
+                <div class="feature__separator"></div>
+                <p class="feature__p" align="justify">Lorem Ipsum is simply dummy text of the printing and typesetting
+                  let. Lorem Ipsum has been the industry.</p>
               </div>
             </div>
             <div class="col-md-3">
-              <div class="quarter-block">
-                <div class="feature-icon">
+              <div class="feature__quarter">
+                <div class="feature__icon">
                   <i class="fa fa-heart-o"></i>
                 </div>
-                <h4>CLEAN CODE</h4>
-                <div class="feature-separator"></div>
-                <p align="justify">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has
-                  been the
-                  industry.</p>
+                <h4 class="feature__h4">CLEAN CODE</h4>
+                <div class="feature__separator"></div>
+                <p class="feature__p" align="justify">Lorem Ipsum is simply dummy text of the printing and typesetting
+                  let. Lorem Ipsum has been the industry.</p>
               </div>
             </div>
             <div class="col-md-3">
-              <div class="quarter-block">
-                <div class="feature-icon">
+              <div class="feature__quarter">
+                <div class="feature__icon">
                   <i class="fa fa-lightbulb-o"></i>
                 </div>
-                <h4>CREATIVE IDEAS</h4>
-                <div class="feature-separator"></div>
-                <p align="justify">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has
-                  been the
-                  industry.</p>
+                <h4 class="feature__h4">CREATIVE IDEAS</h4>
+                <div class="feature__separator"></div>
+                <p class="feature__p" align="justify">Lorem Ipsum is simply dummy text of the printing and typesetting
+                  let. Lorem Ipsum has been the industry.</p>
               </div>
             </div>
             <div class="col-md-3">
-              <div class="quarter-block">
-                <div class="feature-icon">
+              <div class="feature__quarter">
+                <div class="feature__icon">
                   <i class="far fa-comments"></i>
                 </div>
-                <h4>FREE SUPPORT</h4>
-                <div class="feature-separator"></div>
-                <p align="justify">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has
-                  been the
-                  industry.</p>
+                <h4 class="feature__h4">FREE SUPPORT</h4>
+                <div class="feature__separator"></div>
+                <p class="feature__p" align="justify">Lorem Ipsum is simply dummy text of the printing and typesetting
+                  let. Lorem Ipsum has been the industry.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="anchor">
-      <a href="#feature"><i class="fas fa-anchor"></i></a>
+    <div class="anchor feature__anchor">
+      <a class="anchor__a" href="#" onclick="return slowScroll('.contacts')"><i class="fas fa-anchor"></i></a>
     </div>
   </section>
-</section>
+</header>
 
 <section class="services">
-  <div class="container-fluid">
-    <div class="row">
+  <div class="services__block">
+    <div class="row m-0">
 
-      <div class="main-service">
-
-        <div class="col-md-6 col-sm-12 p-0 text-right mr-0">
-          <div class="half-main-service service-info">
-
-            <div class="head-title">
-              <h2>OUR SERVICES</h2>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12 col-sm-10 col-xs-10">
-                <div class="row">
-                  <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1">
-                    <div class="third">
-                      <h4>WEB DESIGN</h4>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has
-                        been the industry's standard dummy text ever.</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-1 col-xs-1">
-                    <div class="circle">
-                      <i class="fas fa-desktop"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 col-sm-10 col-xs-10">
-                <div class="row">
-                  <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1">
-                    <div class="third">
-                      <h4>PRINT DESIGN</h4>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has
-                        been the industry's standard dummy text ever.</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-1 col-xs-1">
-                    <div class="circle">
-                      <i class="far fa-copy"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 col-sm-10 col-xs-10">
-                <div class="row">
-                  <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1">
-                    <div class="third">
-                      <h4>PHOTOGRAPHY</h4>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has
-                        been the industry's standard dummy text ever.</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-1 col-xs-1">
-                    <div class="circle">
-                      <i class="fas fa-camera"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="col-md-7 col-sm-12 p-0 text-right">
+        <div class="services__info">
+          <div class="services__title">
+            <h2 class="services__title-h2">OUR SERVICES</h2>
           </div>
+
+          <ul class="list services__list">
+            <li class="services__item">
+              <h4 class="services__item-title">WEB DESIGN</h4>
+              <p class="services__item-description">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ip sum has
+                been the industry's standard dummy text ever.</p>
+              <div class="services__item-icon">
+                <i class="fas fa-desktop"></i>
+              </div>
+            </li>
+            <li class="services__item">
+              <h4 class="services__item-title">CLEAN CODE</h4>
+              <p class="services__item-description">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ip sum has
+                been the industry's standard dummy text ever.</p>
+              <div class="services__item-icon">
+                <i class="far fa-copy"></i>
+              </div>
+            </li>
+            <li class="services__item">
+              <h4 class="services__item-title">FREE SUPPORT</h4>
+              <p class="services__item-description">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ip sum has
+                been the industry's standard dummy text ever.</p>
+              <div class="services__item-icon">
+                <i class="fas fa-camera"></i>
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <div class="col-md-6 col-sm-12 p-0">
-          <div class="half-main-service service-img">
-            <img src="/img/services.png"
-                 width="100%" height="100%" alt="Services">
-          </div>
+      <div class="col-md-5 col-sm-12 p-0">
+        <div class="services__img">
+          <img class="services__img-png" src="/img/services.png"
+               width="100%" height="100%" alt="Services">
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<section class="contacts">
+  <div class="container">
+    <div class="contacts__header">
+      <h2 class="contacts__title">kEEP IN TOUCH</h2>
+      <p class="contacts__description">Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit,
+        dictum quam nec.</p>
+      <div class="separator contacts__separator"></div>
+    </div>
+
+      <div class="contacts__main">
+        <div class="col-md-5 col-sm-12 p-0">
+          <div class="connect contacts__connect">
+            <div class="connect__info">
+              <h4 class="connect__title">OUR ADDRESS</h4>
+              <p class="connect__description">House #13, Streat road, Sydney 2310 Australia</p>
+            </div>
+            <div class="connect__info">
+              <h4 class="connect__title">CALL US</h4>
+              <p class="connect__description">+ 880 168 109 1425 <br> + 0216809142</p>
+            </div>
+            <div class="connect__info">
+              <h4 class="connect__title">EMAIL US</h4>
+              <p class="connect__description">contactus@email.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-7 col-sm-12 p-0">
+          <form class="form contacts__form" action="#" method="get" enctype="multipart/form-data">
+            <input class="form__input" type="text" name="name" placeholder="Name" required>
+            <input class="form__input" id="email" type="email" name="email" placeholder="Email" required>
+            <input class="form__input" type="text" name="subject" placeholder="Subject" required>
+            <textarea class="form__textarea" placeholder="Message" required></textarea>
+            <button class="btn form__btn" type="submit">SEND MESSAGE</button>
+            <label class="form__label" for="email" style="display: none;">Вы ввели неверный email</label>
+          </form>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="free">
+  <div class="free__block">
+    <div class="container">
+      <h6 class="free__title">Let's get started now. <span class="free__span">It's FREE!</span></h6>
+      <p class="free__description">30 day free trial. Free plan allows up to 2 projects. Pay if  you need more. Cancel
+        anytime. No catches.</p>
+      <button class="btn free__btn">start free trial</button>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__block">
+      <div class="footer__left">
+        <ul class="social footer__social">
+          <li class="social__icon">
+            <i class="fab fa-facebook-f"></i>
+          </li>
+          <li class="social__icon">
+            <i class="fab fa-twitter"></i>
+          </li>
+          <li class="social__icon">
+            <i class="fas fa-rss"></i>
+          </li>
+          <li class="social__icon">
+            <i class="fab fa-google-plus-g"></i>
+          </li>
+          <li class="social__icon">
+            <i class="fab fa-linkedin-in"></i>
+          </li>
+          <li class="social__icon">
+            <i class="fab fa-skype"></i>
+          </li>
+          <li class="social__icon">
+            <i class="fab fa-vimeo-v"></i>
+          </li>
+          <li class="social__icon">
+            <i class="fab fa-tumblr"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__right">
+        <p class="footer__author">Kazi Erfan © All Rights Reserved </p>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<div class="arrow-up">
+  <div class="wrapper arrow-up__wrapper">
+    <a class="arrow-up__link" href="#">
+      <i class="fas fa-angle-up"></i>
+    </a>
+  </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/js/slick.min.js"></script>

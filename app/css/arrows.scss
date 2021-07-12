@@ -1,0 +1,63 @@
+.arrow__wrapper
+{
+  position: absolute;
+  top: 35%;
+  margin: 50px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #706964;
+  background: #706964;
+  border-radius: 2px;
+  transform: scale(1.5);
+
+  &:hover
+  {
+    background: var(--main-color);
+    border-color: var(--main-color);
+    transition: all .3s ease;
+
+    .arrow__part
+    {
+      border: 2px solid #fff;
+      background: #fff;
+    }
+  }
+}
+
+.arrow__prev
+{
+  left: 5%;
+}
+
+.arrow__next
+{
+  right: 5%;
+}
+
+.arrow__mirror
+{
+  transform: scale(-1.5, 1.5);
+}
+
+.arrow__part
+{
+  position: absolute;
+  width: 12px;
+  border-radius: 2px;
+  border: 2px solid #3f3832;
+  background: #3f3832;
+}
+
+.arrow__part_up
+{
+  top: 6px;
+  left: 4px;
+  transform: rotateZ(-45deg);
+}
+
+.arrow__part_down
+{
+  top: 12px;
+  left: 4px;
+  transform: rotateZ(45deg);
+}

@@ -3,12 +3,17 @@ const gulp = require('gulp'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     minifyJS = require('gulp-minify'),
+    autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync').create();
 //create - чтобы создать соединение с локальным сервером
 
 gulp.task('minCSS', async function() {//таск позволяет минифицировать scss-файлы
     gulp.src('app/css/*.scss')//взяли файлы из папки app
         .pipe(sass())//конвертируем из scss в css
+        .pipe(autoprefixer({
+            overrideBrowserslist: ['last 20 versions'], //Добавляет префиксы для последних 20 версий всех браузеров
+            cascade: false
+        }))
         .pipe(minifyCSS())//функция минификации
         .pipe(rename({//переименовываем файл
             suffix: '.min'
